@@ -1,0 +1,5 @@
+# SubSpectra CMake starter
+cmake_minimum_required(VERSION 3.13)
+project(SubSpectra)
+
+add_subdirectory(apps)
