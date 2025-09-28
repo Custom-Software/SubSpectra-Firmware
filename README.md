@@ -34,7 +34,7 @@ MIT
 Click here to download the latest version of SubSpectra[SubSpectra.custom.firmware.zip](https://github.com/user-attachments/files/22583560/SubSpectra.custom.firmware.zip)
 If you want old versions, go to release and find the version you want to download. Click on the download button featured in all releases.
 If you want pre-releases then you can sign up on our discord server.
-
+For more information on downloading go to https://docs.flipper.net/
 ***
 
 ## Requirements
