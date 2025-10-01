@@ -10,6 +10,7 @@ SubSpectra is a custom firmware for Flipper Zero focused on fun, customization, 
 - Games and entertainment
 - GPIO, Bluetooth, and USB tools
 - Download files directly from your Flipper Zero
+- You can clone this repo and make SubSpectra the ultimate firmware for you!
 ***
 ## Building
 
