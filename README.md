@@ -41,6 +41,15 @@ For more information on downloading go to https://docs.flipper.net/
 ## Requirements
 Must have Flipper Zero device. No other products will work with this firmware. If you do not know how to install firmware to your Flipper Zero, go to https://stackoverflow.com/questions/73127708/how-to-flash-flipper-zero-with-custom-firmware
 ***
+## Terms of Use
+## Warning
+
+### This software is intended solely for experimental purposes and is not meant for any illegal activities. We do not condone unlawful behavior and strongly encourage you to use it only within the bounds of the law.
+
+### This project is developed independently and is not affiliated with Flipper Devices.
+
+### DO NOT test on other peoples belongings. Only use YOUR hardware, doing otherwise is ILLEGAL! We are not responsible for any damage caused by these files. Users are at fault of these rules. Check local laws before using these files.
+***
 ### Notes
 
 Thank you for supporting and downloading SubSpectra custom firmware. If you have questions, sugestions, or bug reports go to the discussions page to talk to us.
