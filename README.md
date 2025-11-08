@@ -61,3 +61,4 @@ Must have Flipper Zero device. No other products will work with this firmware. I
 Thank you for supporting and downloading SubSpectra custom firmware. If you have questions, sugestions, or bug reports go to the discussions page to talk to us.
 ***
 ### Made by Sysop200
+Copyright (c) 2025 SubSpectra Project Authors
