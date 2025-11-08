@@ -28,8 +28,13 @@ SubSpectra is a custom firmware for Flipper Zero focused on fun, customization, 
 - Document your tools in `/docs/`
 ***
 ## License
-
-MIT
+MIT LICENSING
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so.
 
 ***
 ## Download
