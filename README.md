@@ -1,4 +1,11 @@
-<img width="1600" height="896" alt="SubSpectra image" src="https://github.com/user-attachments/assets/8650a48e-dabd-4c32-8eb8-8773ad9fbc41" />
+<h3 align="center">
+    <a href="https://github.com/DarkFlippers/unleashed-firmware">
+        <img src="https://github.com/user-attachments/assets/35172881-7e1a-4516-8d75-696feba47475" />
+
+    </a>
+</h3>
+
+[![Discord Server](https://img.shields.io/discord/937479784148115456?style=flat&logo=discord&label=Discord&color=%237289DA&link=https%3A%2F%2Fdiscord.unleashedflip.com%2F)](https://discord.unleashedflip.com)
 
 ***
 # SubSpectra - Flipper Zero Custom Firmware
