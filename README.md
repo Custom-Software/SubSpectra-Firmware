@@ -1,4 +1,4 @@
-# SubSpectra
+<img width="1600" height="896" alt="SubSpectra image" src="https://github.com/user-attachments/assets/8650a48e-dabd-4c32-8eb8-8773ad9fbc41" />
 
 ***
 # SubSpectra - Flipper Zero Custom Firmware
