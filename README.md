@@ -62,6 +62,14 @@ Must have Flipper Zero device. No other products will work with this firmware. I
 > This project is developed independently and is not affiliated with Flipper Devices.
 
 ***
+
+### Links
+These are notable links for SubSpetra firmware:
+- [Flipper Docs](https://docs.flipper.net/)
+- [SubSpectra Website](https://subspectra.finnsabia.com/)
+- [Flipper Website](https://flipperzero.one/)
+- [Flipper Community](https://flipperzero.one/community)
+***
 ### Notes
 
 Thank you for supporting and downloading SubSpectra custom firmware. If you have questions, sugestions, or bug reports go to the discussions page to talk to us.
