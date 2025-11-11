@@ -2,12 +2,10 @@
      <a href="[https://github.com/DarkFlippers/unleashed-firmware](https://github.com/SubSpectra/SubSpectra-Firmware)">
         <img src="https://github.com/user-attachments/assets/35172881-7e1a-4516-8d75-696feba47475" />
 
-***
 </h3>
 
 [![Discord Server](https://img.shields.io/iscord/937479784148115456?style=flat&logo=discord&label=Discord&color=%237289DA&link=https%3A%2F%2Fdiscord.unleashedflip.com%2F)](https://iscord.unleashedflip.com)
 
-***
 # SubSpectra - Flipper Zero Custom Firmware
 
 SubSpectra is a custom firmware for Flipper Zero focused on fun, customization, and expanded capabilities:
@@ -33,6 +31,30 @@ SubSpectra is a custom firmware for Flipper Zero focused on fun, customization, 
 - Place new apps in `/apps/`
 - Add assets (images, sounds) in `/assets/`
 - Document your tools in `/docs/`
+***
+## 🆕 What's New
+
+> <details>
+> <summary><strong>Firmware Changes </strong></summary>
+> <br/>
+>
+> - Many new protocols added
+> - Regional TX restrictions removed
+> - Extra Sub-GHz frequencies added
+> - Frequency range can be extended in settings file _(warning: It can damage Flipper's hardware)_
+> - Many rolling code [protocols](#current-modified-and-new-sub-ghz-protocols-list) now have the ability to save & send captured signals  
+> - FAAC SLH (Spa) & BFT Mitto (keeloq secure with seed) manual creation
+> - External CC1101 module support 
+> </details>
+
+> <details>
+> <summary><strong>Repo Changes </strong></summary>
+> <br/>
+>
+> - New contributer @trnsk
+> - New SubSpectra image
+> - New disscusions
+> - Better organization
 ***
 ## License
 MIT LICENSING
