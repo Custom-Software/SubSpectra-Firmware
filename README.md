@@ -1,6 +1,11 @@
-# SubSpectra
+<h3 align="center">
+     <a href="[https://github.com/DarkFlippers/unleashed-firmware](https://github.com/SubSpectra/SubSpectra-Firmware)">
+        <img src="https://github.com/user-attachments/assets/35172881-7e1a-4516-8d75-696feba47475" />
 
-***
+</h3>
+
+[![Discord Server](https://img.shields.io/iscord/937479784148115456?style=flat&logo=discord&label=Discord&color=%237289DA&link=https%3A%2F%2Fdiscord.unleashedflip.com%2F)](https://iscord.unleashedflip.com)
+
 # SubSpectra - Flipper Zero Custom Firmware
 
 SubSpectra is a custom firmware for Flipper Zero focused on fun, customization, and expanded capabilities:
@@ -27,6 +32,30 @@ SubSpectra is a custom firmware for Flipper Zero focused on fun, customization, 
 - Add assets (images, sounds) in `/assets/`
 - Document your tools in `/docs/`
 ***
+## What's New
+
+> <details>
+> <summary><strong>Firmware Changes </strong></summary>
+> <br/>
+>
+> - Many new protocols added
+> - Regional TX restrictions removed
+> - Extra Sub-GHz frequencies added
+> - Frequency range can be extended in settings file _(warning: It can damage Flipper's hardware)_
+> - Many rolling code [protocols](#current-modified-and-new-sub-ghz-protocols-list) now have the ability to save & send captured signals  
+> - FAAC SLH (Spa) & BFT Mitto (keeloq secure with seed) manual creation
+> - External CC1101 module support 
+> </details>
+
+> <details>
+> <summary><strong>Repo Changes </strong></summary>
+> <br/>
+>
+> - New contributer @trnsk
+> - New SubSpectra image
+> - New disscusions
+> - Better organization
+***
 ## License
 MIT LICENSING
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -48,16 +77,24 @@ For more information on downloading go to https://docs.flipper.net/
 Must have Flipper Zero device. No other products will work with this firmware. If you do not know how to install firmware to your Flipper Zero, go to https://stackoverflow.com/questions/73127708/how-to-flash-flipper-zero-with-custom-firmware
 ***
 ## Terms of Use
-## Warning
+> [!WARNING]
+> This software is intended solely for experimental purposes and is not meant for any illegal activities.
+> We do not condone unlawful behavior and strongly encourage you to use it only within the bounds of the law.
+>
+> This project is developed independently and is not affiliated with Flipper Devices.
 
-### This software is intended solely for experimental purposes and is not meant for any illegal activities. We do not condone unlawful behavior and strongly encourage you to use it only within the bounds of the law.
+***
 
-### This project is developed independently and is not affiliated with Flipper Devices.
-
-### DO NOT test on other peoples belongings. Only use YOUR hardware, doing otherwise is ILLEGAL! We are not responsible for any damage caused by these files. Users are at fault of these rules. Check local laws before using these files.
+### Links
+These are notable links for SubSpetra firmware:
+- [Flipper Docs](https://docs.flipper.net/)
+- [SubSpectra Website](https://subspectra.finnsabia.com/)
+- [Flipper Website](https://flipperzero.one/)
+- [Flipper Community](https://flipperzero.one/community)
 ***
 ### Notes
 
 Thank you for supporting and downloading SubSpectra custom firmware. If you have questions, sugestions, or bug reports go to the discussions page to talk to us.
 ***
-### Made by Sysop200
+### Made by @Sysop200
+Copyright (c) 2025 SubSpectra Project Authors

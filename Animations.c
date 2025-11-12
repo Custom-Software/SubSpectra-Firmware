@@ -10,6 +10,15 @@ void funny_animation_draw(Canvas* canvas, uint32_t frame) {
     canvas_draw_dot(canvas, x-3, y-3);
     canvas_draw_dot(canvas, x+3, y-3);
     canvas_draw_line(canvas, x-3, y+3, x+3, y+3);
+
+void funny_animation_draw(Canvas* canvas, uint32_t frame) {
+    // Simple bouncing smiley for demo
+    int x = (frame % 64);
+    int y = 32 + (int)(10 * sinf(frame * 0.1f));
+    canvas_draw_circle(canvas, x, y, 8);
+    canvas_draw_dot(canvas, x-3, y-3);
+    canvas_draw_dot(canvas, x+3, y-3);
+    canvas_draw_line(canvas, x-3, y+3, x+3, y+3);
 }
 
 int32_t funny_animation_app(void* p) {
