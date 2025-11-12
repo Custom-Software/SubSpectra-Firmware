@@ -6,7 +6,7 @@ V.1.0 is the curent release of SubSpectra firmware and is the only supported ver
 
 | Version | Supported          |
 | ------- | ------------------ |
-| v.1.0   | :red_x:            |
+| v.1.0   |        ❌           |
 | v.1.1   | :white_check_mark: |
 | v.1.2   | :white_check_mark: |
 | v.1.3   | :white_check_mark: |
