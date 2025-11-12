@@ -58,6 +58,7 @@ SubSpectra is a custom firmware for Flipper Zero focused on fun, customization, 
 ***
 ## License
 MIT LICENSING
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
@@ -71,6 +72,8 @@ Click here to download the latest version of SubSpectra[SubSpectra.custom.firmwa
 If you want old versions, go to release and find the version you want to download. Click on the download button featured in all releases.
 If you want pre-releases then you can sign up on our discord server.
 For more information on downloading go to https://docs.flipper.net/
+> [!Caution]
+> When joining the Pre Release Program (PRP), pre released versions of SubSpectra may not work properly or there may be bugs. Pre Released versions go through very few moderation, this means that they may not be suported on your >Flipper Zero. To allow SubSpectra to perform at its finest use the latest suported version of SubSpectra.
 ***
 
 ## Requirements
@@ -91,6 +94,8 @@ These are notable links for SubSpetra firmware:
 - [SubSpectra Website](https://subspectra.finnsabia.com/)
 - [Flipper Website](https://flipperzero.one/)
 - [Flipper Community](https://flipperzero.one/community)
+> [!Important]
+> This links are safe and secure.
 ***
 ### Notes
 
