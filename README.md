@@ -19,12 +19,27 @@ SubSpectra is a custom firmware for Flipper Zero focused on fun, customization, 
 - You can clone this repo and make SubSpectra the ultimate firmware for you!
 ***
 ## Building 
+- **Developer Documentation** - [developer.flipper.net](https://developer.flipper.net/flipperzero/doxygen)  
+- **[How to build](/documentation/HowToBuild.md#how-to-build-by-yourself) | [Project-structure](#project-structure)**
+- **CLion IDE** - How to setup workspace for flipper firmware development [by Savely Krasovsky](https://krasovs.ky/2022/11/01/flipper-zero-clion.html)
+- **"Hello world!"** - plugin tutorial [English<sub> by DroomOne</sub> ](https://github.com/DroomOne/Flipper-Plugin-Tutorial) | [Russian<sub> by Pavel Yakovlev</sub>](https://yakovlev.me/hello-flipper-zero)
+- [How to write your own app](https://flipper.atmanos.com/docs/overview/intro).
 
+### Project structure
+
+- `applications`    - Applications and services used in firmware
+- `assets`          - Assets used by applications and services
+- `debug`           - Debug tool: GDB-plugins, SVD-file and etc
+- `documentation`   - Documentation generation system configs and input files
+- `firmware`        - Firmware source code
+- `scripts`         - Supplementary scripts and python libraries home
+### Customization
 1. Clone this repo:  
    `git clone https://github.com/SYOP200/-.git`
 2. Follow Flipper Zero firmware build instructions [here](https://github.com/flipperdevices/flipperzero-firmware#building)
 3. Copy or link your custom apps and assets into `/apps/` and `/assets/`
 4. Run `./fbt` to build!
+   
 ***
 ## Firmware Customization and Development
 
