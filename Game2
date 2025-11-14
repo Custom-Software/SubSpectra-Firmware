@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+//Made by @SYOP200 on Github
+//GNU LICENSING
+<script>
+        let gameState = {
+            economy: 60,
+            stability: 60,
+            politics: 60,
+            corruption: 25,
+            population: 10000000, // 10 million starting population
+            days: 0,
+            gameOver: false,
+            paperworkPending: false,
+            paperworkDeadline: 0,
+            currentPaperwork: null,
+            gameStarted: false
+        };
+        
+        function startGame() {
+            document.getElementById('menu-screen').style.display = 'none';
+            document.getElementById('game-container').style.display = 'block';
+            gameState.gameStarted = true;
+            updateDisplay();
+            setTimeout(passDay, 3000);
+        }
