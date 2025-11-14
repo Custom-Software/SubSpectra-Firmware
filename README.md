@@ -33,15 +33,16 @@ SubSpectra is a custom firmware for Flipper Zero focused on fun, customization, 
 - `documentation`   - Documentation generation system configs and input files
 - `firmware`        - Firmware source code
 - `scripts`         - Supplementary scripts and python libraries home
+   
+***
+## Firmware Customization and Development
 ### Customization
 1. Clone this repo:  
    `git clone https://github.com/SYOP200/-.git`
 2. Follow Flipper Zero firmware build instructions [here](https://github.com/flipperdevices/flipperzero-firmware#building)
 3. Copy or link your custom apps and assets into `/apps/` and `/assets/`
 4. Run `./fbt` to build!
-   
-***
-## Firmware Customization and Development
+
 
 - Place new apps in `/apps/`
 - Add assets (images, sounds) in `/assets/`
