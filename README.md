@@ -17,6 +17,7 @@ SubSpectra is a custom firmware for Flipper Zero focused on fun, customization, 
 - GPIO, Bluetooth, and USB tools
 - Download files directly from your Flipper Zero
 - You can clone this repo and make SubSpectra the ultimate firmware for you!
+- Includes built in language tool, languagetool-master, by [LanguageTool](https://github.com/languagetool-org)
 ***
 ## Building 
 - **Developer Documentation** - [developer.flipper.net](https://developer.flipper.net/flipperzero/doxygen)  
