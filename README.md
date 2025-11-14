@@ -6,6 +6,8 @@
 
 [![💻Discord Server](https://img.shields.io/iscord/937479784148115456?style=flat&logo=discord&label=Discord&color=%237289DA&link=https%3A%2F%2Fdiscord.unleashedflip.com%2F)](https://iscord.unleashedflip.com)
 [![💻Website]([https://](https://subspectra.finnsabia.com/))](https://subspectra.finnsabia.com/)
+![](https://img.shields.io/badge/Coded%20By%20Human-100%25-brightgreen)
+
 # SubSpectra - Flipper Zero Custom Firmware
 
 SubSpectra is a custom firmware for Flipper Zero focused on fun, customization, and expanded capabilities:
