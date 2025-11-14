@@ -22,7 +22,7 @@ SubSpectra is a custom firmware for Flipper Zero focused on fun, customization, 
 - Includes built in language tool, languagetool-master, by [LanguageTool](https://github.com/languagetool-org)
 > [!CAUTION]
 > Version 1.3 of SubSpectra is no longer supported with security features. To learn more, click the link below.
-> #7 
+> [#7](https://github.com/orgs/SubSpectra/discussions/7) 
 ***
 ## Building 
 - **Developer Documentation** - [developer.flipper.net](https://developer.flipper.net/flipperzero/doxygen)  
