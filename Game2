@@ -23,3 +23,474 @@
             updateDisplay();
             setTimeout(passDay, 3000);
         }
+ }
+        
+        const paperworkTemplates = [
+            {
+                title: "EMERGENCY BUDGET ALLOCATION FORM 7734-B",
+                text: "MINISTRY OF FINANCE - URGENT AUTHORIZATION REQUIRED\n\nWHEREAS the state requires immediate allocation of funds for purposes deemed necessary by the bureaucratic apparatus, and WHEREAS delays in processing may result in administrative penalties, fiscal sanctions, and potential investigation by the Office of Financial Oversight...\n\nYOU ARE HEREBY REQUIRED to authorize the transfer of funds in amounts to be determined by subordinate officials. This authorization grants blanket approval for expenditures that may or may not be disclosed in future quarterly reports.\n\nFailure to sign within the allocated time will result in automatic budget freezes, suspension of all governmental operations, and mandatory attendance at a 47-hour seminar on fiscal responsibility.\n\nBy signing below, you acknowledge that you may not have read this entire document but are legally bound by its contents nonetheless.",
+                effect: { economy: -4, corruption: 6, population: -30000 }
+            },
+            {
+                title: "DECREE 8291-C: SPECIAL ADMINISTRATIVE POWERS",
+                text: "OFFICE OF EXECUTIVE AUTHORITY - IMMEDIATE ACTION REQUIRED\n\nThis decree grants temporary emergency powers to regional administrators for purposes of maintaining order and stability. Said powers include but are not limited to: suspension of local elections, reallocation of municipal budgets, appointment of oversight committees, and other measures deemed appropriate.\n\nThe undersigned agrees to accept full responsibility for any consequences arising from the execution of these powers, including but not limited to: civil unrest, international condemnation, legal challenges, and historical judgment.\n\nNOTE: This document has been pre-approved by 47 different committees. Your signature is merely a formality, but legally required.\n\nRefusal to sign will be interpreted as dereliction of duty and may result in immediate removal from office.",
+                effect: { politics: -8, stability: -6, corruption: 10, population: -60000 }
+            },
+            {
+                title: "FORM 3389-Z: INFRASTRUCTURE DEVELOPMENT CONTRACT",
+                text: "DEPARTMENT OF PUBLIC WORKS - CONTRACTOR AUTHORIZATION\n\nThis form authorizes the engagement of private contractors for infrastructure development projects. The contractors listed below have been selected through a rigorous process that you were not involved in:\n\n- Construction expenses: Amount TBD\n- Completion timeline: Flexible\n- Quality standards: Negotiable\n- Oversight: Minimal\n\nContractor selection was made by a committee of officials who may or may not have financial interests in said contractors. You are signing to indicate your awareness and approval of this arrangement.\n\nDelaying this project by refusing to sign will result in: roads remaining unpaved, bridges remaining unbuilt, and citizens remaining angry.",
+                effect: { economy: -6, corruption: 12, stability: -4, population: -40000 }
+            },
+            {
+                title: "NATIONAL SECURITY DIRECTIVE 1194-K",
+                text: "CLASSIFIED - FOR YOUR EYES ONLY (AND 200 OTHER OFFICIALS)\n\nThis directive authorizes enhanced surveillance measures for purposes of national security. Specific details are classified at a level above your clearance, but your signature is still required.\n\nMeasures may include: monitoring of communications, detention without trial, relocation of populations, and other activities that will definitely not be controversial.\n\nLegal advisors have assured us this is probably constitutional in most interpretations. International human rights organizations may disagree, but that's their problem.\n\nYour signature indicates acceptance of potential war crimes tribunal appearances, international sanctions, and strongly worded UN resolutions.\n\nRefusal to sign indicates you are soft on security and will be noted in your permanent record.",
+                effect: { politics: -12, stability: -10, corruption: 8, population: -90000 }
+            },
+            {
+                title: "FORM 5567-M: REGULATORY EXEMPTION REQUEST",
+                text: "OFFICE OF BUSINESS AFFAIRS - EXPEDITED PROCESSING REQUIRED\n\nSeveral corporations have requested exemptions from various environmental, labor, and safety regulations. Their generous campaign contributions—er, expressions of civic engagement—have been noted.\n\nThis form grants blanket exemptions for:\n- Environmental protection standards\n- Worker safety requirements\n- Consumer protection laws\n- Financial transparency obligations\n\nEconomic advisors assure us that deregulation will create jobs. Environmental scientists and labor unions disagree, but they don't have lobbyists as well-funded as the corporations do.\n\nSigning this will boost the economy! Probably. Maybe. We'll find out.\n\nNot signing will anger powerful business interests who might fund your opponents in the next election.",
+                effect: { economy: 12, corruption: 16, stability: -8, population: -50000 }
+            },
+            {
+                title: "EMERGENCY DECREE 9901-F: CENSUS ADJUSTMENT",
+                text: "MINISTRY OF STATISTICS - TIME-SENSITIVE MODIFICATION\n\nRecent census data has revealed numbers that are... inconvenient for current policy narratives. This decree authorizes 'statistical adjustments' to better reflect our desired reality.\n\nProposed modifications include:\n- Reclassification of unemployment figures\n- Revised poverty calculations \n- Alternative crime statistics\n- Creative GDP accounting\n\nStatisticians protest that this is 'falsifying data' and 'undermining public trust,' but they're statisticians, so who cares what they think?\n\nYour signature acknowledges that truth is flexible and numbers are negotiable.\n\nRefusal to sign means we'll have to report the real numbers, which makes everyone look bad.",
+                effect: { politics: 10, corruption: 14, economy: -4, population: -35000 }
+            }
+        ];
+        
+        const insults = [
+            "You call that leadership? My goldfish makes better decisions.",
+            "Congratulations on another catastrophic failure!",
+            "Your approval rating just hit a new low. Impressive incompetence!",
+            "History will not remember you fondly.",
+            "Even a random number generator would govern better.",
+            "Your cabinet is laughing at you behind your back.",
+            "The previous dictator was more popular than you.",
+            "Your mother is disappointed in your leadership skills.",
+            "This is why you shouldn't have dropped out of politics school.",
+            "Citizens are literally fleeing the country because of you.",
+            "You're the reason democracy is failing.",
+            "Brilliant strategy! If your goal was to fail spectacularly.",
+            "At this rate, you'll be out of office by next week.",
+            "The opposition is writing your resignation speech already.",
+            "You're making your enemies look competent by comparison.",
+            "Your legacy: a cautionary tale of what NOT to do.",
+            "Corruption is rampant. But at least you're consistent!",
+            "Did you learn governance from a comic book?",
+            "You're speedrunning national collapse. Well done!",
+            "Future textbooks will use you as the 'bad example'.",
+            "Your decisions are as stable as your government.",
+            "Congratulations! You've made everyone equally miserable!",
+            "Even your allies think you're incompetent.",
+            "You're not just bad at this, you're historically bad.",
+            "This is what happens when you promote based on nepotism."
+        ];
+        
+        const events = [
+            { name: "💸 MASSIVE Bribery Scandal!", corruption: 15, stability: -12, politics: -15, population: -60000 },
+            { name: "🌪️ Category 5 Hurricane!", economy: -18, stability: -15, corruption: 8, population: -150000 },
+            { name: "📰 Leaked Documents Everywhere!", politics: -12, corruption: 6, stability: -8, population: -40000 },
+            { name: "🎉 Trade Deal (Corrupt Officials Got Rich)", economy: 12, politics: 6, corruption: 12, population: 25000 },
+            { name: "😡 MASSIVE Protests in Capital!", stability: -18, politics: -12, economy: -8, population: -90000 },
+            { name: "🌋 Volcanic Eruption + Earthquake!", economy: -15, stability: -18, politics: -8, population: -200000 },
+            { name: "💰 Tax Windfall (From Bribes)", economy: 15, corruption: 15, population: -30000 },
+            { name: "🔥 Nationwide Riots!", stability: -22, corruption: 12, economy: -12, population: -180000 },
+            { name: "🏦 Banking Collapse!", economy: -22, corruption: 15, stability: -12, population: -130000 },
+            { name: "⚡ Total Power Grid Collapse!", economy: -15, stability: -15, politics: -8, population: -110000 },
+            { name: "🌾 Famine Declared!", economy: -18, stability: -15, politics: -12, population: -300000 },
+            { name: "👔 Your Vice President Defects!", politics: -18, stability: -12, corruption: 8, population: -80000 },
+            { name: "🚁 Military Coup Attempt Failed!", politics: -15, stability: -18, corruption: 12, population: -160000 },
+            { name: "💀 Pandemic Outbreak!", economy: -15, stability: -18, politics: -8, population: -350000 },
+            { name: "🏴 Separatist Movement Gains Support!", stability: -15, politics: -15, economy: -8, population: -250000 },
+            { name: "🔫 Assassination Attempt (You Survived)!", politics: -12, stability: -15, corruption: 5, population: -70000 },
+            { name: "🌊 Tsunami Destroys Port Cities!", economy: -22, stability: -15, population: -320000 },
+            { name: "🎰 Casino Lobby Bribes Everyone!", corruption: 18, politics: -8, population: -25000 },
+            { name: "📉 Stock Market Crashes!", economy: -18, stability: -12, politics: -8, population: -140000 },
+            { name: "🚨 UN Investigates War Crimes!", politics: -22, stability: -12, corruption: 8, population: -130000 },
+            { name: "✈️ Mass Emigration Wave!", population: -400000, economy: -12, stability: -8 },
+            { name: "👶 Birth Rate Plummets!", population: -80000, stability: -5 },
+            { name: "🌟 International Aid Arrives!", economy: 18, stability: 10, population: 15000 },
+            { name: "📈 Tourism Boom!", economy: 15, population: 20000, corruption: 5 },
+            { name: "🏭 Factory Explosion Kills 200!", economy: -12, stability: -10, population: -85000 },
+            { name: "🚽 Sewage System Fails Nationwide!", stability: -14, economy: -8, population: -95000 },
+            { name: "📺 State TV Exposes Government Lies!", politics: -16, stability: -12, corruption: 8 },
+            { name: "🎓 Education System Collapses!", stability: -10, economy: -14, population: -120000 },
+            { name: "🏥 Healthcare System Overwhelmed!", stability: -16, population: -180000, politics: -10 },
+            { name: "💊 Drug Cartel Infiltrates Police!", corruption: 20, stability: -12, politics: -8 },
+            { name: "🚢 Port Strike Cripples Trade!", economy: -16, stability: -10, politics: -6 },
+            { name: "⛪ Religious Extremists Gain Power!", stability: -14, politics: -12, corruption: 10 },
+            { name: "🎪 Circus Comes to Town!", stability: 5, population: 10000 },
+            { name: "🌧️ Acid Rain Damages Crops!", economy: -10, stability: -8, population: -60000 },
+            { name: "🦠 Water Supply Contaminated!", stability: -18, economy: -10, population: -140000 },
+            { name: "📱 Social Media Exposes Scandal!", politics: -14, corruption: 12, stability: -10 },
+            { name: "🎖️ Military Demands Budget Increase!", economy: -12, politics: -10, corruption: 8 },
+            { name: "🏛️ Parliament Deadlocked on Everything!", politics: -14, stability: -8, economy: -6 },
+            { name: "🚗 Fuel Shortage Crisis!", economy: -14, stability: -16, population: -70000 },
+            { name: "📊 GDP Report: You're Doing Terrible!", politics: -10, stability: -8, economy: -12 },
+            { name: "🎭 Opposition Party Grows Stronger!", politics: -16, stability: -6 },
+            { name: "🌡️ Heat Wave Kills Thousands!", stability: -12, population: -220000, economy: -8 },
+            { name: "❄️ Blizzard Shuts Down Cities!", economy: -14, stability: -10, population: -90000 },
+            { name: "🐀 Rat Infestation in Capital!", stability: -10, economy: -6, population: -45000 },
+            { name: "🎬 Documentary Exposes Your Incompetence!", politics: -18, stability: -10 },
+            { name: "💼 Briefcase of Cash Found in Your Office!", corruption: 22, politics: -20, stability: -12 },
+            { name: "🔫 Terrorist Attacks Turn the Country into Shambles!", corruption: 37, politics: -27, stability: -27, economy: -30 }
+        ];
+        
+        function updateDisplay() {
+            document.getElementById('economy-val').textContent = Math.round(gameState.economy);
+            document.getElementById('stability-val').textContent = Math.round(gameState.stability);
+            document.getElementById('politics-val').textContent = Math.round(gameState.politics);
+            document.getElementById('corruption-val').textContent = Math.round(gameState.corruption);
+            document.getElementById('days').textContent = gameState.days;
+            
+            // Format population
+            const pop = gameState.population;
+            let popText;
+            if (pop >= 1000000) {
+                popText = (pop / 1000000).toFixed(1) + 'M';
+            } else if (pop >= 1000) {
+                popText = (pop / 1000).toFixed(0) + 'K';
+            } else {
+                popText = pop.toString();
+            }
+            document.getElementById('population-val').textContent = popText;
+            
+            updateBar('economy', gameState.economy);
+            updateBar('stability', gameState.stability);
+            updateBar('politics', gameState.politics);
+            updateBar('corruption', gameState.corruption);
+            
+            // Population bar as percentage of starting population
+            const popPercent = (gameState.population / 10000000) * 100;
+            updateBar('population', popPercent);
+        }
+        
+        function updateBar(stat, value) {
+            const bar = document.getElementById(stat + '-bar');
+            const clamped = Math.max(0, Math.min(100, value));
+            bar.style.width = clamped + '%';
+            
+            if (stat === 'corruption') {
+                bar.className = 'stat-fill ' + (clamped < 40 ? 'good' : clamped < 70 ? 'okay' : 'bad');
+            } else {
+                bar.className = 'stat-fill ' + (clamped > 60 ? 'good' : clamped > 30 ? 'okay' : 'bad');
+            }
+        }
+        
+        function addEvent(message) {
+            const log = document.getElementById('event-log');
+            const eventDiv = document.createElement('div');
+            eventDiv.className = 'event-item';
+            eventDiv.textContent = message;
+            log.insertBefore(eventDiv, log.firstChild);
+        }
+        
+        function modifyStat(stat, amount) {
+            gameState[stat] = Math.max(0, Math.min(100, gameState[stat] + amount));
+        }
+        
+        function checkGameOver() {
+            let gameOverMessage = "";
+            
+            if (gameState.economy <= 0) {
+                gameOverMessage = "💸 Economy collapsed! Your country is bankrupt!";
+            } else if (gameState.stability <= 0) {
+                gameOverMessage = "😡 Mass riots overthrew your government!";
+            } else if (gameState.politics <= 0) {
+                gameOverMessage = "🗳️ Parliament voted no confidence! You're out!";
+            } else if (gameState.corruption >= 100) {
+                gameOverMessage = "🚨 Total corruption! International sanctions ended your regime!";
+            } else if (gameState.population <= 100000) {
+                gameOverMessage = "👥 Everyone fled your country! No citizens remain!";
+            }
+            
+            if (gameOverMessage) {
+                // Add a final insult
+                const finalInsults = [
+                    "Honestly, we all saw this coming.",
+                    "You lasted longer than we expected. Still terrible though.",
+                    "Well, that was embarrassing to watch.",
+                    "Historians will study your failures for generations.",
+                    "At least you're consistently incompetent.",
+                    "Your country deserved better than you.",
+                    "Maybe try playing on easy mode? Oh wait, this IS easy mode.",
+                    "You somehow made things worse with every decision.",
+                    "The bar was on the ground, and you brought a shovel.",
+                    "Please don't put 'dictator' on your resume.",
+                    "Please don't try to use hacks for help this time. They don't work!",
+                    "Imagine losing at a game made on a Chromebook..."
+                ];
+                
+                gameOverMessage += "\n\n" + finalInsults[Math.floor(Math.random() * finalInsults.length)];
+                endGame(gameOverMessage);
+                return true;
+            }
+            return false;
+        }
+        
+        function endGame(message) {
+            gameState.gameOver = true;
+            document.getElementById('game-over-msg').textContent = message;
+            document.getElementById('final-days').textContent = gameState.days;
+            document.getElementById('game-over').style.display = 'flex';
+        }
+        
+        function randomEvent() {
+            // 70% chance of an event happening - slightly less frequent
+            if (Math.random() < 0.70) {
+                const event = events[Math.floor(Math.random() * events.length)];
+                addEvent(event.name);
+                
+                if (event.economy) modifyStat('economy', event.economy);
+                if (event.stability) modifyStat('stability', event.stability);
+                if (event.politics) modifyStat('politics', event.politics);
+                if (event.corruption) modifyStat('corruption', event.corruption);
+                if (event.population) {
+                    gameState.population = Math.max(0, gameState.population + event.population);
+                }
+                
+                // Add insult 40% of the time after bad events
+                if (Math.random() < 0.4 && (event.economy < 0 || event.stability < 0 || event.politics < 0)) {
+                    const insult = insults[Math.floor(Math.random() * insults.length)];
+                    setTimeout(() => addEvent("💬 " + insult), 500);
+                }
+                
+                // 15% chance of a DOUBLE DISASTER (reduced from 25%)
+                if (Math.random() < 0.15) {
+                    const event2 = events[Math.floor(Math.random() * events.length)];
+                    addEvent("🔥🔥 AND IMMEDIATELY: " + event2.name);
+                    
+                    if (event2.economy) modifyStat('economy', event2.economy);
+                    if (event2.stability) modifyStat('stability', event2.stability);
+                    if (event2.politics) modifyStat('politics', event2.politics);
+                    if (event2.corruption) modifyStat('corruption', event2.corruption);
+                    if (event2.population) {
+                        gameState.population = Math.max(0, gameState.population + event2.population);
+                    }
+                }
+            }
+        }
+        
+        function passDay() {
+            if (gameState.gameOver) return;
+            
+            gameState.days++;
+            
+            // Check paperwork deadline
+            if (gameState.paperworkPending) {
+                gameState.paperworkDeadline--;
+                updatePaperworkTimer();
+                
+                if (gameState.paperworkDeadline <= 0) {
+                    missedPaperwork();
+                    return;
+                }
+            }
+            
+            // MUCH HARSHER natural decay/growth
+            modifyStat('corruption', Math.random() * 3 + 1); // Corruption grows slower
+            modifyStat('stability', -(Math.random() * 1.5 + 0.5)); // Stability decays less
+            modifyStat('economy', -(Math.random() * 1)); // Economy bleeds slower
+            modifyStat('politics', -(Math.random() * 0.8)); // Politics erode slower
+            
+            // Population naturally declines less
+            const popLoss = Math.floor(Math.random() * 10000 + 5000);
+            gameState.population = Math.max(0, gameState.population - popLoss);
+            
+            // Random insults based on performance
+            if (gameState.days % 5 === 0 && Math.random() < 0.5) {
+                if (gameState.corruption > 70) {
+                    addEvent("💬 Your corruption levels are off the charts. Impressive... in the worst way.");
+                } else if (gameState.economy < 30) {
+                    addEvent("💬 The economy is in shambles. Have you considered resigning?");
+                } else if (gameState.stability < 30) {
+                    addEvent("💬 People are rioting in the streets. But sure, keep doing what you're doing.");
+                } else if (gameState.population < 5000000) {
+                    addEvent("💬 Half your citizens have fled. Maybe it's you?");
+                }
+            }
+            
+            randomEvent();
+            
+            // Random paperwork appears! (20% chance, reduced from 30%)
+            if (!gameState.paperworkPending && Math.random() < 0.20) {
+                showPaperwork();
+            }
+            
+            updateDisplay();
+            
+            // Events happen faster as time goes on!
+            const speed = Math.max(1500, 3000 - (gameState.days * 30));
+            
+            if (!checkGameOver()) {
+                setTimeout(passDay, speed);
+            }
+        }
+        
+        function investEconomy() {
+            modifyStat('politics', -12);
+            modifyStat('economy', 15);
+            modifyStat('corruption', 6);
+            gameState.population = Math.max(0, gameState.population - 20000);
+            addEvent("📊 Economic investment... but officials are skimming!");
+            
+            if (Math.random() < 0.3) {
+                const insult = insults[Math.floor(Math.random() * insults.length)];
+                setTimeout(() => addEvent("💬 " + insult), 400);
+            }
+            
+            updateDisplay();
+            checkGameOver();
+        }
+        
+        function crackdownCorruption() {
+            modifyStat('corruption', -20);
+            modifyStat('politics', -12);
+            modifyStat('stability', -6);
+            gameState.population = Math.max(0, gameState.population - 50000);
+            addEvent("⚖️ Anti-corruption drive - powerful enemies AND angry citizens!");
+            
+            if (Math.random() < 0.3) {
+                const insult = insults[Math.floor(Math.random() * insults.length)];
+                setTimeout(() => addEvent("💬 " + insult), 400);
+            }
+            
+            updateDisplay();
+            checkGameOver();
+        }
+        
+        function populistPolicy() {
+            modifyStat('stability', 12);
+            modifyStat('economy', -12);
+            modifyStat('corruption', 4);
+            gameState.population += 30000; // People happy, for now
+            addEvent("🎤 Populist measures - treasury drained, corrupt officials enriched!");
+            
+            if (Math.random() < 0.25) {
+                const insult = insults[Math.floor(Math.random() * insults.length)];
+                setTimeout(() => addEvent("💬 " + insult), 400);
+            }
+            
+            updateDisplay();
+            checkGameOver();
+        }
+        
+        function negotiatePolitics() {
+            modifyStat('politics', 15);
+            modifyStat('economy', -8);
+            modifyStat('corruption', 8);
+            gameState.population = Math.max(0, gameState.population - 25000);
+            addEvent("🤝 Political deals made... with corrupt compromises!");
+            
+            if (Math.random() < 0.3) {
+                const insult = insults[Math.floor(Math.random() * insults.length)];
+                setTimeout(() => addEvent("💬 " + insult), 400);
+            }
+            
+            updateDisplay();
+            checkGameOver();
+        }
+        
+        function doNothing() {
+            addEvent("😴 You did nothing... things get worse!");
+            modifyStat('corruption', 8);
+            modifyStat('stability', -6);
+            modifyStat('economy', -4);
+            modifyStat('politics', -4);
+            gameState.population = Math.max(0, gameState.population - 100000);
+            
+            // Higher chance of insult when doing nothing
+            if (Math.random() < 0.6) {
+                const insult = insults[Math.floor(Math.random() * insults.length)];
+                setTimeout(() => addEvent("💬 " + insult), 400);
+            }
+            
+            updateDisplay();
+            checkGameOver();
+        }
+        
+        // Start the game (only when button clicked)
+        
+        // Paperwork functions
+        function showPaperwork() {
+            gameState.paperworkPending = true;
+            gameState.paperworkDeadline = 7; // 7 ticks to sign (increased from 5)
+            gameState.currentPaperwork = paperworkTemplates[Math.floor(Math.random() * paperworkTemplates.length)];
+            
+            document.getElementById('paperwork-title').textContent = '📋 ' + gameState.currentPaperwork.title;
+            document.getElementById('paperwork-text').textContent = gameState.currentPaperwork.text;
+            document.getElementById('paperwork-modal').style.display = 'flex';
+            document.getElementById('signature-input').value = '';
+            document.getElementById('sign-button').disabled = true;
+            
+            updatePaperworkTimer();
+            addEvent("📋 URGENT PAPERWORK REQUIRES YOUR SIGNATURE!");
+        }
+        
+        function updatePaperworkTimer() {
+            const timer = document.getElementById('paperwork-timer');
+            if (gameState.paperworkPending) {
+                timer.textContent = `⏰ YOU HAVE ${gameState.paperworkDeadline} DAYS TO SIGN OR FACE CONSEQUENCES!`;
+            }
+        }
+        
+        function signPaperwork() {
+            if (!gameState.paperworkPending) return;
+            
+            const effect = gameState.currentPaperwork.effect;
+            
+            addEvent("✍️ Paperwork signed: " + gameState.currentPaperwork.title);
+            
+            if (effect.economy) modifyStat('economy', effect.economy);
+            if (effect.stability) modifyStat('stability', effect.stability);
+            if (effect.politics) modifyStat('politics', effect.politics);
+            if (effect.corruption) modifyStat('corruption', effect.corruption);
+            if (effect.population) {
+                gameState.population = Math.max(0, gameState.population + effect.population);
+            }
+            
+            closePaperwork();
+        }
+        
+        function missedPaperwork() {
+            addEvent("💀 PAPERWORK DEADLINE MISSED! SEVERE PENALTIES APPLIED!");
+            
+            // Harsh penalties for missing paperwork (reduced from before)
+            modifyStat('economy', -15);
+            modifyStat('stability', -12);
+            modifyStat('politics', -18);
+            modifyStat('corruption', 8);
+            gameState.population = Math.max(0, gameState.population - 200000);
+            
+            closePaperwork();
+            
+            updateDisplay();
+            
+            if (!checkGameOver()) {
+                const speed = Math.max(1500, 3000 - (gameState.days * 30));
+                setTimeout(passDay, speed);
+            }
+        }
+        
+        function closePaperwork() {
+            gameState.paperworkPending = false;
+            gameState.currentPaperwork = null;
+            gameState.paperworkDeadline = 0;
+            document.getElementById('paperwork-modal').style.display = 'none';
+            updateDisplay();
+            checkGameOver();
+        }
+        
+        // Enable sign button when correct text is typed
+        document.getElementById('signature-input').addEventListener('input', function(e) {
+            const btn = document.getElementById('sign-button');
+            btn.disabled = e.target.value.trim().toUpperCase() !== 'I APPROVE';
+        });
+        
+        document.getElementById('signature-input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' && !document.getElementById('sign-button').disabled) {
+                signPaperwork();
+            }
+        });
+    </script>
+
