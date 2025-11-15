@@ -56,7 +56,8 @@ SubSpectra is a custom firmware for Flipper Zero focused on fun, customization, 
 - Document your tools in `/docs/`
 ***
 ## What's New
-
+# Newest stable release:
+Version 1.2
 > <details>
 > <summary><strong>Firmware Changes </strong></summary>
 > <br/>
@@ -78,6 +79,7 @@ SubSpectra is a custom firmware for Flipper Zero focused on fun, customization, 
 > - New SubSpectra image
 > - New disscusions
 > - Better organization
+For more information about releases go to the release tab.
 ***
 ## License
 MIT LICENSING
