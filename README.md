@@ -26,6 +26,7 @@ SubSpectra is a custom firmware for Flipper Zero focused on fun, customization, 
 > [#7](https://github.com/orgs/SubSpectra/discussions/7)
 ***
 ## Table of Contents
+- [Building and Project Structure](https://github.com/SubSpectra/SubSpectra-Firmware?tab=readme-ov-file#building)
 - [Customization and Development](https://github.com/SubSpectra/SubSpectra-Firmware/blob/main/README.md#firmware-customization-and-development)
 - [Whats New](https://github.com/SubSpectra/SubSpectra-Firmware?tab=readme-ov-file#whats-new)
 - [License](https://github.com/SubSpectra/SubSpectra-Firmware?tab=readme-ov-file#license)
@@ -35,7 +36,7 @@ SubSpectra is a custom firmware for Flipper Zero focused on fun, customization, 
 - [Instructions](https://github.com/SubSpectra/SubSpectra-Firmware?tab=readme-ov-file#-instructions)
 - [Links](https://github.com/SubSpectra/SubSpectra-Firmware?tab=readme-ov-file#links)
 - [Notes](https://github.com/SubSpectra/SubSpectra-Firmware?tab=readme-ov-file#notes)
-- [Building and Project Structure](https://github.com/SubSpectra/SubSpectra-Firmware?tab=readme-ov-file#building)
+
 ***
 ## Building 
 - **Developer Documentation** - [developer.flipper.net](https://developer.flipper.net/flipperzero/doxygen)  
