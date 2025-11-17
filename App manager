@@ -1,0 +1,6 @@
+var app = angular.module('matchApp', []);
+app.controller('initialController', function($scope) {
+	$scope.flipFront = function(event){
+		$(event.target).parent().find('.front').css({
+			'-webkit-transform': "perspective(600px) rotateY(-180deg)",
+			'transform': "perspective(600px) rotateY(-180deg)"
