@@ -21,7 +21,7 @@ SubSpectra is a custom firmware for Flipper Zero focused on fun, customization, 
 - You can clone this repo and make SubSpectra the ultimate firmware for you!
 - Includes built in language tool, languagetool-master, by [LanguageTool](https://github.com/languagetool-org)
 > [!CAUTION]
-> Version 1.3 of SubSpectra is no longer supported with security features. To learn more, click the link below.
+> Version 1.0 of SubSpectra is no longer supported with security features. To learn more, click the link below.
 > 
 > [#7](https://github.com/orgs/SubSpectra/discussions/7)
 ***
@@ -174,11 +174,11 @@ These are notable links for SubSpetra firmware:
 - [Flipper Website](https://flipperzero.one/)
 - [Flipper Community](https://flipperzero.one/community)
 > [!Important]
-> This links are safe and secure.
+> These links are safe and secure.
 ***
 ### Notes
 
 Thank you for supporting and downloading SubSpectra custom firmware. If you have questions, sugestions, or bug reports go to the discussions page to talk to us.
 ***
-### Made by @Sysop200
-Copyright (c) 2025 SubSpectra Project Authors
+**Made by @Sysop200**
+**Copyright (c) 2025 SubSpectra Project Authors**
