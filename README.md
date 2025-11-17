@@ -171,6 +171,7 @@ Must have Flipper Zero device. No other products will work with this firmware. I
 These are notable links for SubSpetra firmware:
 - [Flipper Docs](https://docs.flipper.net/)
 - [SubSpectra Website](https://subspectra.finnsabia.com/)
+- SubSpectra Docs [Coming soon]
 - [Flipper Website](https://flipperzero.one/)
 - [Flipper Community](https://flipperzero.one/community)
 > [!Important]
