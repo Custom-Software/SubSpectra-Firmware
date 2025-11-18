@@ -2,7 +2,6 @@
 
 ## Supported Versions
 
-V.1.0 is the curent release of SubSpectra firmware and is the only supported version to the Security Policy.
 
 | Version | Supported          |
 | ------- | ------------------ |
