@@ -1,4 +1,6 @@
 # SubSpectra Manual
+<img width="1600" height="896" alt="SubSpectra image" src="https://github.com/user-attachments/assets/061c3c2e-6eb7-4243-8ba9-c56425dda3c3" />
+
 ## You will learn:
 - How to customize SubSpectra
 - How to use SubSpectra
