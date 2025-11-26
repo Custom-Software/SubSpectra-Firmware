@@ -10,6 +10,10 @@
 
 # SubSpectra - Flipper Zero Custom Firmware
 
+
+█▀ █░█ █▄▄ █▀ █▀█ █▀▀ █▀▀ ▀█▀ █▀█ ▄▀█<br>
+▄█ █▄█ █▄█ ▄█ █▀▀ ██▄ █▄▄ ░█░ █▀▄ █▀█
+
 SubSpectra is a custom firmware for Flipper Zero focused on fun, customization, and expanded capabilities:
 
 - Funny animations and themes
