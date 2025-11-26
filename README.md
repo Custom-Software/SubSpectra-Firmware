@@ -8,12 +8,11 @@
 [![💻Website]([https://](https://subspectra.finnsabia.com/))](https://subspectra.finnsabia.com/)
 ![](https://img.shields.io/badge/Coded%20By%20Human-100%25-brightgreen)
 
-# SubSpectra - Flipper Zero Custom Firmware
-
 
 █▀ █░█ █▄▄ █▀ █▀█ █▀▀ █▀▀ ▀█▀ █▀█ ▄▀█<br>
-▄█ █▄█ █▄█ ▄█ █▀▀ ██▄ █▄▄ ░█░ █▀▄ █▀█
+▄█ █▄█ █▄█ ▄█ █▀▀ ██▄ █▄▄ ░█░ █▀▄ █▀█   Custom Firmware
 
+***
 SubSpectra is a custom firmware for Flipper Zero focused on fun, customization, and expanded capabilities:
 
 - Funny animations and themes
