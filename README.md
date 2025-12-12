@@ -185,6 +185,6 @@ These are notable links for SubSpetra firmware:
 
 Thank you for supporting and downloading SubSpectra custom firmware. If you have questions, sugestions, or bug reports go to the discussions page to talk to us.
 ***
-**Made by @Sysop200**
+**Made by @SYOP200**
 
 **Copyright (c) 2025 SubSpectra Project Authors**
