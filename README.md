@@ -74,19 +74,18 @@ SubSpectra is a custom firmware for Flipper Zero focused on fun, customization, 
 ## What's New
 ### **Huge updates coming soon!**
 ### Newest stable release:
-Version 1.2
+Version 1.4
 ***
 > <details>
 > <summary><strong>Firmware Changes </strong></summary>
 > <br/>
 >
 > - Many new protocols added
-> - Regional TX restrictions removed
-> - Extra Sub-GHz frequencies added
 > - Frequency range can be extended in settings file _(warning: It can damage Flipper's hardware)_
 > - Many rolling code [protocols](#current-modified-and-new-sub-ghz-protocols-list) now have the ability to save & send captured signals  
 > - FAAC SLH (Spa) & BFT Mitto (keeloq secure with seed) manual creation
 > - External CC1101 module support 
+> - New animations
 > </details>
 
 > <details>
@@ -96,7 +95,7 @@ Version 1.2
 > - New contributer @trnsk
 > - New SubSpectra image
 > - New disscusions
-> - Better organization
+> - Better organization (Seperate files for each item)
 
 For more information about releases go to the release tab.
 ***
