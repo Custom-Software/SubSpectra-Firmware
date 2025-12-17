@@ -6,10 +6,10 @@
 | Version | Supported          |
 | ------- | ------------------ |
 | v.1.0   |        ❌           |
-| v.1.1   | :white_check_mark: |
+| v.1.1   |        ❌          |
 | v.1.2   | :white_check_mark: |
 | v.1.3   | :white_check_mark: |
-
+| v.1.4   | :white_check_mark: |
 ***
 ## Reporting a Vulnerability
 
